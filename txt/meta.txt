@@ -1,0 +1,44 @@
+I. Python cơ bản
+Cài đặt ngôn ngữ lập trình Python (Install Python)
+Cài đặt và sử dụng Visual Studio Code (Install and use for Visual Studio Code)
+Cách luôn mở file python bằng Visual Studio Code (Always use this Visual Studio Code)
+Cách ghi chú trong ngôn ngữ Python (How to take notes in Python)
+Các kiểu dữ liệu trong ngôn ngữ Python (Data Types in Python)
+Kiểu dữ liệu string, kiểu chuỗi (Text type in Python)
+Kiểu số (Numeric Types in Pyhton)
+Kiểu dữ liệu danh sách (list in Python)
+List 2 chiều (list 2D in Python)
+Câu lệnh có điều kiện if...else (Python Conditions and If statements)
+Toán tử logic trong if...else (logical operator keywords for if...else)
+Vòng lặp for...loop (Python For Loops)
+Vòng lặp while...loop (Python while loops)
+Hàm do người dùng tự định nghĩa (Python Functions)
+Đối số tùy biến *Arg trong hàm def (*Arguments in function)
+Cách gọi các file code Python & ứng dụng hàm main (if __name__=="__main__")
+Gọi file code từ thư mục khác nhau (Import module from different director)
+
+II. Python Excel
+Cài đặt ngôn ngữ lập trình Python (Install Python)
+Cài đặt và sử dụng Visual Studio Code (Install and use for Visual Studio Code)
+Cách luôn mở file python bằng Visual Studio Code (Always use this Visual Studio Code)
+Cài đặt xlwings (Install xlwings)- Thư viện giao tiếp Excel
+Đối tượng Bảng tính Excel hay WorkBook (Object WorkBook)
+Cách mở, đóng WorkBook Excel lưu sẵn trên máy tính bằng code Python
+Đối tượng WorkSheet (Object WorkSheet)
+Đối tượng Range trong bảng tính Excel (Object Range)
+List trong Python Excel (list 1D)
+Ghi dữ liệu vào bảng tính Excel (list 1D, list 2D)
+Lấy dữ liệu từ bảng tính Excel đưa vào list Python 
+Viết chương trình sắp xếp lại cấu trúc dữ liệu Bảng tính Excel
+Hoàn thành viết chương trình sắp xếp cấu trúc dữ liệu trong Bảng tính Excel
+Vòng lặp While...Loops (Ứng dụng Usedname, Password)
+Dùng While...Loops tối ưu tốc độ code trong chương trình thay đổi cấu trúc dữ liệu bài trước
+Tìm dòng cuối dữ liệu trong Excel (Find last row using down method)
+Tìm dòng cuối bảng tính Excel đi từ dưới lên (last row by up methol)
+Hàm do người dùng tự định nghĩa (Python Functions)
+Đối số tùy biến *Arg trong hàm def (*Arguments in function)
+Xây dựng hàm tìm dòng cuối dữ liệu (Build a function to find the last row)
+Xây dựng hàm tìm cột cuối chứa dữ liệu (func LastCol by methol "left")
+Xây dựng hàm tìm vùng có chứa dữ liệu (Find range have data)
+Sửa code tìm tên cột cuối vùng chứa dữ liệu (Fix code find last row)
+Thuật toán tìm tên cột cho bảng tính Excel (Algorithm to find column names)
