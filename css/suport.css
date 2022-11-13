@@ -1,20 +1,27 @@
 
-/* img_avatar */
+/* img_avatar ảnh VuNghiXuan */
 #avatar{
     /* vertical-align: left; */
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    padding: 10px 5px 5px 5px;
+    padding: 10px 5px ;
 }
 
+#logo{
+    /* vertical-align: center; */
+    width: 50px;
+    height: 20px;
+    /* border-radius: 10%; */
+    /* padding: 10px 5px 5px 5px;  */
+} 
 
 /* head_page_vu */
-#head_page_vu{
+#str_head{
     background-color: rgb(4, 85, 4);
-    /* text-align: center; */
+    text-align: left;
     color: white;
-    padding: 30px;
+    padding: 10px;
     /* margin: 0; */
 }
 
@@ -23,8 +30,9 @@
     flex-wrap: wrap
     
 }
+
 #con_left {
-    background-color: rgb(4, 85, 4);
+    background-color: rgb(5, 85, 5);
     text-align: right;
     padding: 10px 0px 0px 0px;
     flex: 30%;
@@ -32,7 +40,8 @@
     }
 
 #con_right {
-    background-color: rgb(4, 85, 4);
+    background-color: rgb(5, 85, 5);
+    
     text-align: left;
     /* padding: 20px; */
     flex: 70%;    
@@ -64,7 +73,51 @@ nav a{
     float: left;
 }
 
-/* Hiệu ứng chuột */
+/* Dropdown Button */
+.dropbtn {
+    background-color: RGB(5, 85, 5);
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+  }
+  
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+
+/* Hiệu ứng chuột click*/
 nav a:hover{
     /* Thay màu nền */
     background-color: white;
@@ -75,38 +128,47 @@ nav a:hover{
     /* Thay màu chữ */
     color: red;
 }
-#lylich{
+#content_pyLang{
     text-align: justify;
 }
 
 /* Thông tin cá nhân */
-#thongtincanhan{
+#header_pyLang{
     color:  goldenrod ;
 }
 
-/* Phần lý lịch hồ sơ kinh nghiệm */
-#con_mota{
-    background-color: rgb(246, 235, 214);
+/* Phần nội dung chính */
+#con_content{
+    background-color:rgb(240, 228, 124);
     display:flex;
     flex-wrap: wrap           
 }
 
-#con_left_mota {
-    /* background-color: rgb(246, 235, 214); */
+#con_left_content {
+    background-color: rgb(252, 251, 250);
     text-align: justify;
     /* padding: 10px 0px 0px 0px; */
-    flex: 25%;
-    /* margin: 10px; */
+    flex: 10%;
+    margin: 5px;
     /* border-radius: 5%; */
+    padding: 10px 5px 5px 0px;
+    }
+#con_center_content {
+    background-color: rgb(252, 251, 250);
+    text-align: justify;
+    /* padding: 10px 0px 0px 0px; */
+    flex: 40%;
+    /* margin: 10px; */
+    /* border-radius: 2%; */
     padding: 10px 5px 5px 20px;
     }
 
-#con_right_mota {
-    background-color: rgb(254, 254, 254);
-    text-align: center;
+#con_right_content {
+    background-color: rgb(252, 251, 250);
+    text-align: justify;
     /* padding: 20px; */
-    flex: 70%;
-    margin: 20px 0px 0px 5px;
+    flex: 40%;
+    margin: 0px 0px 0px 5px;
     /* border-radius: 5%; */
     padding: 5px 5px 5px 5px;
     }
@@ -142,6 +204,7 @@ nav a:hover{
     /* background-color: rgb(246, 235, 214); */
     text-align: justify;
     /* padding: 10px 0px 0px 0px; */
+    /* flex: 25%; */
     flex: 25%;
     /* margin: 10px; */
     /* border-radius: 5%; */
@@ -257,3 +320,4 @@ footer{
     }
     
 }
+

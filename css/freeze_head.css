@@ -1,0 +1,44 @@
+/* Cố định tiêu đề */
+/* Style the header */
+
+
+body {
+    margin: 160;
+    /* font-family: Arial, Helvetica; */
+  }
+
+.top-container {
+background-color: #f1f1f1;
+padding: 10px;
+text-align: center;
+}
+.header {
+padding: 5px 10px;
+background: rgb(240, 228, 124);
+color: #f1f1f1;
+
+}
+  
+  /* Page content */
+.content {
+  /* 16px */
+/* padding: 16px; */
+/* margin-top: 50px; height: 3000px;  */
+overflow: auto;
+
+
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+position: fixed;
+top: 0px;
+width: 50%
+ 
+}
+  
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+padding-top: 0px;
+
+}
