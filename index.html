@@ -1,365 +1,590 @@
+<!-- https://viblo.asia/p/con-duong-minh-dang-di-de-tro-thanh-fullstack-web-developer-maGK7VWx5j2?fbclid=IwAR1nZ5ZCAmAoSMGa8ZT--5RoI8uDC8wMifO_ze32Y_REvrE7JSPOeOPSziM -->
 <!DOCTYPE html>
 <html lang="vi">
     <head>
         <meta charset= "utf-8"/>
         
-        <meta name="discription" content="Giới thiệu bản thân"/>
-        <meta name="author" content="Đặng Thanh Vũ"/>
-        <meta name="Vu Nghi Xuan" content="Đặng Thanh Vũ"/>
+        <meta name="discription" content="Trang web học code cho các bạn trái ngành"/>
+        <meta name="author" content="Đặng Thanh Vũ"/>        
+        <meta name="VuNghiXuan" content="Vu Nghi Xuan"/>
         <meta name="country" content="Tuy Hòa - Phú Yên"/>
+
+        <meta name="Py_Basic" content="Python cơ bản"/>
+        <meta name="Py_Advanced" content="Python nâng cao"/>
+        <meta name="Py_Excel" content="Python Excel"/>
+        <meta name="Py_Word" content="Python Word"/>
+        <meta name="Py_SQL" content="Python SQL"/>
+        <meta name="Code_NonIT" content="Lập trình cho Non-IT"/>
+        <meta name="Code_Office" content="Lập trình ứng dụng cho các phần mềm Office"/>
+        <meta name="Code_First" content="Lần đầu học Lập trình (code)"/>
+
+        <!-- Thẻ tìm từ khóa Python cơ bản -->
+        <meta name="HD1" content="Cài đặt ngôn ngữ lập trình Python (Install Python)"/>
+        <meta name="HD2" content="Cài đặt và sử dụng Visual Studio Code (Install and use for Visual Studio Code)"/>
+        <meta name="HD3" content="Cách luôn mở file python bằng Visual Studio Code (Always use this Visual Studio Code)"/>
+        <meta name="B1" content="Cách ghi chú trong ngôn ngữ Python (How to take notes in Python)"/>
+        <meta name="B2" content="Các kiểu dữ liệu trong ngôn ngữ Python (Data Types in Python)"/>
+        <meta name="B3" content="Kiểu dữ liệu string, kiểu chuỗi (Text type in Python)"/>
+        <meta name="B4" content="Kiểu số (Numeric Types in Pyhton)"/>
+        <meta name="B5" content="Kiểu dữ liệu danh sách (list in Python)"/>
+        <meta name="B6" content="List 2 chiều (list 2D in Python)"/>
+        <meta name="B7" content="Câu lệnh có điều kiện if...else (Python Conditions and If statements)"/>
+        <meta name="B8" content="Toán tử logic trong if...else (logical operator keywords for if...else)"/>
+        <meta name="B9" content="Vòng lặp for...loop (Python For Loops)"/>
+        <meta name="B10" content="Vòng lặp while...loop (Python while loops)"/>
+        <meta name="B11" content="Hàm do người dùng tự định nghĩa (Python Functions)"/>
+        <meta name="B12" content="Đối số tùy biến *Arg trong hàm def (*Arguments in function)"/>
+        <meta name="B13" content='Cách gọi các file code Python & ứng dụng hàm main (if __name__=="__main__")'/>
+        <meta name="B14" content="Gọi file code từ thư mục khác nhau (Import module from different director)"/>
+        <!-- Thẻ tìm từ khóa Python Excel -->
+        <meta name="PyEx1" content="Cài đặt xlwings (Install xlwings)- Thư viện giao tiếp Excel"/>
+        <meta name="PyEx2" content="Đối tượng Bảng tính Excel hay WorkBook (Object WorkBook)"/>
+        <meta name="PyEx3" content="Cách mở, đóng WorkBook Excel lưu sẵn trên máy tính bằng code Python"/>
+        <meta name="PyEx4" content="Đối tượng WorkSheet (Object WorkSheet)"/>
+        <meta name="PyEx5" content="Đối tượng Range trong bảng tính Excel (Object Range)"/>
+        <meta name="PyEx6" content="List trong Python Excel (list 1D)"/>
+        <meta name="PyEx7" content="Ghi dữ liệu vào bảng tính Excel (list 1D, list 2D)"/>
+        <meta name="PyEx8" content="Lấy dữ liệu từ bảng tính Excel đưa vào list Python"/>
+        <meta name="PyEx9" content="Hoàn thành viết chương trình sắp xếp cấu trúc dữ liệu trong Bảng tính Excel"/>
+        <meta name="PyEx10" content="Vòng lặp While...Loops (Ứng dụng Usedname, Password)"/>
+        <meta name="PyEx11" content="Dùng While...Loops tối ưu tốc độ code trong chương trình thay đổi cấu trúc dữ liệu bài trước"/>
+        <meta name="PyEx12" content="Tìm dòng cuối dữ liệu trong Excel (Find last row using down method)"/>
+        <meta name="PyEx13" content="Tìm dòng cuối bảng tính Excel đi từ dưới lên (last row by up methol)"/>
+        <meta name="PyEx14" content="Hàm do người dùng tự định nghĩa (Python Functions)"/>
+        <meta name="PyEx15" content="Đối số tùy biến *Arg trong hàm def (*Arguments in function)"/>
+        <meta name="PyEx16" content="Xây dựng hàm tìm dòng cuối dữ liệu (Build a function to find the last row)"/>
+        <meta name="PyEx17" content='Xây dựng hàm tìm cột cuối chứa dữ liệu (func LastCol by methol "left")'/>
+        <meta name="PyEx18" content="Xây dựng hàm tìm vùng có chứa dữ liệu (Find range have data)"/>
+        <meta name="PyEx19" content="Sửa code tìm tên cột cuối vùng chứa dữ liệu (Fix code find last row)"/>
+        <meta name="PyEx20" content="Thuật toán tìm tên cột cho bảng tính Excel (Algorithm to find column names)"/>
+        
+        
+        <!-- Đặt logo từ tiêu đề web /images/favicon.ico-->
+        <link rel="icon" type="image/x-icon" href="assets/logo_web.png">
 
         <!-- github.com,https://github.com/join,dangdiepquan,vU05291922 -->
         <!-- https://dangdiepquan.github.io/ -->
         
         <!-- Sử dụng thay đổi màn hình trên điện thoại -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <link rel="stylesheet" href="css/suport.css">
-        <script src="js/script.js"></script>
         
-        <title>Page of Thanh Vu</title>
+
+        <!-- Link css -->
+        <link rel="stylesheet" href="css/suport.css">
+        <link rel="stylesheet" href="css/freeze_head.css">
+        <link rel="stylesheet" href="css/menu_letf_content.css">
+        
+
+        <script src="js/script.js"></script>
+        <script defer src="js/freeze_head.js"></script> 
+        <script defer src="js/menu_letf_content.js"></script> 
+        <!-- menu_letf_content.js -->
+        
+        <title>Hướng dẫn lập trình ứng dụng Office - Cú click tối ưu hóa công việc văn phòng !!!</title>
 
     </head>
 
     <body>
-        <div id="con_head">            
+                  
+            
+        <div id="con_head">
+            <!-- <img src="pic_trulli.jpg" alt="Trulli" width="500" height="333"> -->
+
+            <!-- <img id=logo src="assets/logo_thunho.png" alt="Avatar" width="500" height="333">              -->
             <div id ="con_left">
-                <img id=avatar src="assets/avatar_vu.jpg" alt="Avatar"> 
+                <img id=avatar src="assets/avatar_vu.jpg" alt="Avatar">                     
             </div>
             <div id ="con_right">
-                <h1 id = head_page_vu>
-                    <strong>Website VuNghiXuan</strong> <br/>
+                <h1 id = str_head>                        
+                    <strong>HƯỚNG DẪN, CHIA SẺ LẬP TRÌNH ỨNG DỤNG</strong>
+                    <br/>
+                    <em>(Cú click tối ưu hóa công việc tại văn phòng, công sở)</em>                    
                     <!-- <em>(By create VuNghiXuan)</em> -->
                 </h1>                
             </div>
         </div>
 
         <hr> 
-        <nav id="link">
-            <!-- <a href="#con_head" class="link_conhead">Quay lại</a> -->
-            <a href="#lylich" class="link_lylich">Thông tin cá nhân</a> 
-            <a href="#gioithieu_bdtx" class="link_gioithieu_bdtx">Công tác bảo trì</a> 
-            <a href="#ungdung" class="link_ungdung">Ứng dụng </a>
-            <a href="#lienhe" class="link_lienhe">Liên hệ </a>
-        </nav>
+
+        <div class="header" id="myHeader"> 
+            <!-- II/ Viết menu dropbutton -->
+            <!-- II.1 Menu (Giới thiệu ngôn ngữ Python) -->
+            <div class="dropdown">
+                <button class="dropbtn">Trang chủ</button>
+                
+                <!-- <div class="dropdown-content">
+                    <a href="#gioithieu" class="link_gioithieu">Tại sao phải học lập trình???</a>
+                   
+                </div> -->
+            </div>
+            
+            <div class="dropdown">
+                <button class="dropbtn">Hướng dẫn</button>
+                
+                <div class="dropdown-content">
+                    <!-- <a href="#">Ngôn ngữ lập trình Python </a> -->
+                    <a href="#">Python cơ bản</a>
+                    <a href="#">Python Excel</a> 
+                    <a href="#">Python Word (Dự kiến tháng 1/2023)</a> 
+                    <a href="#">Python SQL (Dự kiến tháng 1/2023)</a>  
+                    <a href="#">Python Autocad (Dự kiến tháng 1/2023)</a>             
+                    <!-- <a href="#">Các ứng dụng Python đối với bộ Office (chưa)</a>  -->
+                    <!-- <a href="#">Python cơ bản</a>                -->
+                    <!-- <a href="#">Python Excel</a> -->
+                    <!-- <a href="#">Python Word</a> -->
+                    <!-- <a href="#">Python SQL</a> -->
+                    <!-- <a href="#">Python Apps</a> -->
+                </div>
+
+            </div>
+
+            
+
+            <!-- II.2 Menu (Kho ứng dụng Python) -->
+            <div class="dropdown">
+                <button class="dropbtn">Kho ứng dụng</button>
+                <div class="dropdown-content">
+                    <a href="#ungdung" class="link_ungdung">Kho ứng dụng </a>
+                
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">Liên hệ</button>
+                <div class="dropdown-content">
+                    <a href="#lienhe" class="link_lienhe">Liên hệ </a>
+                <!-- <a href="#">VBA nâng cao</a>
+                <a href="#">VBA Excel</a>
+                <a href="#">VBA Word</a>
+                <a href="#">VBA SQL</a>
+                <a href="#">VBA Apps</a> -->
+                </div>
+            </div>
+        </div>       
         <hr>
-        <div id="lylich">
-            <ul><li><h2 id="thongtincanhan"><strong>THÔNG TIN CÁ NHÂN:</strong></h2></li></ul>
-            <ol>
-                <li>Họ và tên: Đặng Thanh Vũ</li>                        
-                <li>Ngày sinh: 05/08/1979</li>
-                <li>Nguyên quán: Phường 4, Tp.Tuy Hòa - Phú Yên</li>                                
-                <li>Địa chỉ: 45/2C, đường 28, khu phố Long Hòa, phường Long Thạnh Mỹ, Tp. Thủ Đức, Tp. HCM</li>
-                <li>Liên lạc: <br>
-                    Điện thoại: (+084) 0979.820.802 <br>
-                    Email:<a href="vunghixuan.info@gmail.com">vunghixuan.info@gmail.com</a><br/>
-                    Facebook:<a href="https://www.facebook.com/vunghixuan">https://www.facebook.com/vunghixuan </a>
-                </li>
-                <!-- <li>Vị trí ứng tuyển: Data Science/Data Analyst</li> -->
-                <li>Nghề nghiệp: Kỹ sư cầu đường</li>                
-                <li>Làm việc tại: Sở Giao thông vận tải Đồng Nai.</li>
-                
-                <!-- <li>Giới thiệu bản thân: <br>
-                    Là một kỹ sư chuyên ngành kỹ thuật xây dựng, thay vì tập trung tìm hiểu quy trình, tiêu chuẩn kỹ thuật... Tôi lại chọn cho mình lối đi riêng, bằng cách tự trau dồi kiến thức lập trình...để có kết quả như ngày hôm nay, đó là các sản phẩm, phần mềm tự động hóa tối ưu 1 số công việc mà thực tế đã được sử dụng cho công ty cũ trước đây.<a href="#ungdung" class="link_ungdung"> (Xem clip ứng dụng). </a> <br>
-                    Với mong muốn việc lập trình một cách chuyên nghiệp, đồng thời đi sâu và xa hơn nữa, tôi hy vọng được trúng tuyển vào Quý công ty, với các ngôn ngữ lập trình có thể viết được như sau:<br>
-                    VBA excel, Python, HTML, CSS, JAVASCRIPT và PHP. Thư viện kết hợp: Pandas, Xlwings, Numpy, Tkinter, Pygame, Mathplotlib, Sklean... Ứng dụng thực tế trong lĩnh vực Data Science, AI, Website <br>
-                    
-                </li> -->
-                <li>Các ứng dụng tự xây dựng và phát triển:<br>
-                    + Website đã làm: <a href="https://dangdiepquan.github.io/"><strong>ALO...O!!! MÓN NGON VÙNG MIỀN</strong></a><br>
-                    + Python Excel, VBA excel: Phần mềm tìm kiếm dữ liệu, tự động tính toán và xuất 140 file excel dự toán xây dựng <br>
-                    + Data Science: Lấy dữ liệu web và phân tích điểm thi đại học năm 2020. Clean data dữ liệu lấy mã cổ phiếu, báo cáo tại chính các Quý, Bán niên, Năm của các công ty thị trường chứng khoán (chưa hoàn thiện)<br>                   
-                    + AI: Xây dựng và giải thuật toán KNN, KMeans, Linear Regression, Gradient Descent (Mô hình ứng dụng hồi quy tuyến tính, huấn luyện điểm và dự đoán dữ liệu)
-                    <a href="#ungdung" class="link_ungdung">>>> Click tham khảo kho ứng dụng</a>
-                </li> 
 
-                <li>Nơi làm việc trước đây: <br>
-                    <em> 
-                        + Khu Quản lý đường bộ, đường thủy Đồng Nai <br>
-                        + Công ty TNHH Đông đô Nha Trang, Khánh Hòa <br>
-                        + Xí nghiệp xây lắp Tanimex Tân Bình <br>
-                        + Công ty TNHH MTV Dịch vụ Môi trường đô thị Biên Hòa<br>
-                        <!-- + Khu Quản lý đường bộ, đường thủy Đồng Nai <br> -->
-                    </em> 
-                </li>
-                
-                <!-- <li>Kỹ năng lập trình: VBA excel, Python, Website (HTML, CSS, JAVASCRIPT và PHP)</li> -->
-                
-            </ol>
-                    
-        </div>
-
-        <!-- GIỚI THIỆU CÔNG TÁC BẢO TRÌ, BDTX -->
-        <div id=con_mota>
-            <div id=con_left_mota>
-                
-                <div id="gioithieu_bdtx">
-                    <ul><li><h3 id= "bdtx"><strong>GIỚI THIỆU VỀ CÔNG TÁC BẢO TRÌ ĐƯỜNG BỘ:</strong></h3></li></ul>
-                    <p>
-                        Bảo trì công trình là tập hợp các hoạt động nhằm duy trì  hoạt động bình thường và đảm bảo an toàn sử dụng công trình.<br>
-
-                        Công tác bảo trì đường bộ bao gồm công tác bảo dưỡng thường xuyên; sửa chữa định kỳ và sửa chữa đột xuất.<br>
-                        <br>
-                        Bảo dưỡng thường xuyên là các thao tác kỹ thuật được tiến hành thường xuyên nhằm phòng ngừa và khắc phục kịp thời những hư hỏng nhỏ của các bộ phận công trình và thiết bị. <br>
-                        <br>
-                        Bảo dưỡng thường xuyên để hạn chế tối đa sự phát triển từ hư hỏng nhỏ trở thành hư hỏng lớn. Các công việc này được thực hiện thường xuyên liên tục hàng ngày, trong suốt cả năm trên toàn bộ tuyến đường, để đảm bảo giao thông vận tải đường bộ được an toàn, thông suốt và êm thuận.<br>
-                        <br>
+        <div class="content">
+            <div id="content_pyLang">
+                <div id = "con_content">
+                    <div id="con_left_content">
+                        <!-- Phần menu bên trái content -->
+                        <ul><li><h3 ><strong>Hướng dẫn</strong></h3></li></ul>
                         
-                        Công tác sửa chữa định kỳ bao gồm công tác sửa chữa vừa và công tác sửa chữa lớn.
-                    </p>
-                    <ul><li><h3 id="link_vanban">VĂN BẢN PHÁP LÝ LIÊN QUAN</h3> </li></ul>
-                    <ol>
-                        <li> <h5>Thủ tướng chính phủ: </h5><br>
-                            <a href="http://www.chinhphu.vn/portal/page/portal/chinhphu/hethongvanban?class_id=1&mode=detail&document_id=93336">Nghị định số 11/2010/NĐ-CP ngày 24 tháng 02 năm 2010 của Chính phủ quy định về quản lý và bảo vệ kết cấu hạ tầng giao thông đường bộ</a> <br>
-                            <br>
-
-                            <a href="http://vanban.chinhphu.vn/portal/page/portal/chinhphu/hethongvanban?class_id=1&_page=1&mode=detail&document_id=169556"> Nghị định số 100/2013/NĐ-CP của Chính phủ : Sửa đổi, bổ sung một số điều của Nghị định số 11/2010/NĐ-CP ngày 24 tháng 02 năm 2010 của Chính phủ quy định về quản lý và bảo vệ kết cấu hạ tầng giao thông đường bộ</a> <br>
-                            <br>
-                            <a href="http://vanban.chinhphu.vn/portal/page/portal/chinhphu/hethongvanban?class_id=1&_page=58&mode=detail&document_id=98065"> Nghị định số 114/2010/NĐ-CP của Chính phủ : Về bảo trì công trình xây dựng</a> <br>
-                            <br>
-                            <a href="http://vanban.chinhphu.vn/portal/page/portal/chinhphu/hethongvanban?class_id=1&_page=210&mode=detail&document_id=165438"> Nghị định số 10/2013/NĐ-CP của Chính phủ : Quy định việc quản lý, sử dụng và khai thác tài sản kết cấu hạ tầng giao thông đường bộ</a> <br>
-
-                            <br>
-
-                        </li>
-                        <!-- <br> -->
-
-                        <li> <h5>Bộ giao thông vận tải: </h5><br>
+                        <div class="sidenav">
                             
-                            
-                        </li>
+                            <a href="#pyBasic">Python cơ bản</a>
+                            <a href="#pyExcel">Python Excel</a>
+                            <a href="#pyWord">Python Word</a>
+                            <a href="#pySQL">Python SQL</a>
+                            <a href="#pyCad">Python Autocad</a>
+
+                            <button class="dropdown-btn">Học lập trình Python qua ứng dụng thực tế
+                              <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-container">
+                              <a href="#">Quản lý học sinh, nhân viên</a>
+                              <a href="#">Tổng hợp nhiều sheets, nhiều files Excel</a>
+                              <a href="#">Xuất hàng loạt hợp đồng ra Word lấy danh sách từ file Excel </a>
+                              <!-- <a href="#">Link 3</a> -->
+                            </div>
+                            <a href="#contact">Search</a>
+                        </div>
+                          
+                          <!-- <div class="main">
+                            <h2>Sidebar Dropdown</h2>
+                            <p>Click on the dropdown button to open the dropdown menu inside the side navigation.</p>
+                            <p>This sidebar is of full height (100%) and always shown.</p>
+                            <p>Some random text..</p>
+                          </div> -->
+                    </div>
+                    <div id="con_center_content">
+                        <ul><h1 id= "gioithieu"><strong>DANH SÁCH HƯỚNG DẪN</strong></h1></li></ul>
                        
-
-                        <li><h5>UBND tỉnh Đồng Nai: </h5><br>
-                            <!-- 2021 - 2772 - UBT - Quy trình bảo trì đường bộ.pdf -->
-                            <a href="dpf/2021_2772_UBT_QuytrinhBaoTri.pdf"> Quy trình bảo trì đường bộ UBT Đồng Nai</a><br>
-                            <br>
-                            <a href="dpf/2021_2771_UBT_QuytrinhBaoTri_dgthuy.pdf"> Quy trình bảo trì đường thủy UBT Đồng Nai</a><br>
-                            <br>
-
-                        </li>
+                        <!-- <strong> <a href="https://bit.ly/dangkytheodoiVuNghiXuan" target="_blank">Đăng ký kênh youtube VuNghiXuan</a> </strong> -->
                         
+                        <!-- 1. Các Clips Python Cơ bản -->
+                        <p>
+                            <ol>
+                                <!-- <li> -->
+                                <strong> <a href="https://www.youtube.com/playlist?list=PLRYFXjENY4WLWx54XCyWChI9ILag7s9hw" target="_blank">I. PYTHON CƠ BẢN</a> </strong>
+                                <!-- </li>    -->  
+                            </ol>
+                                                    
+                        </p>
+                            <li>
+                                <a href = "https://www.youtube.com/watch?v=6tsai_UDFT0&list=PLRYFXjENY4WLWx54XCyWChI9ILag7s9hw&index=1&t=11s" target= "_blank">Hướng dẫn 1: Cài đặt ngôn ngữ lập trình Python (Install Python)
+                                </a>                           
+                            </li>
+                        <br>  
 
-                        <li><h5>Sở Giao thông Vận tải: </h5><br>
-                            <a href="dpf/kiennghi_giao_khu_cdt.pdf"> Số:3802/SGTVT-KHTC ngày 19/8/2021, V/v kiến nghị giao cho Khu Quản lý đường bộ đường thủy Đồng Nai là chủ đầu tư thực hiện công tác duy tu sửa chữa và bảo dưỡng các tuyến đường bộ, đường thủy cấp tỉnh</a><br>
-                            
-                            <br>
-
+                        <li>
+                            <a href = "https://www.youtube.com/watch?v=uejdAEyT-IA&list=PLRYFXjENY4WLWx54XCyWChI9ILag7s9hw&index=2" target= "_blank">Hướng dẫn 2: Cài đặt và sử dụng Visual Studio Code (Install and use for Visual Studio Code)</a>                        
                         </li>
+                        <br>
+
+                        <li>
+                            <a href = "https://www.youtube.com/watch?v=xiPpY3SHaQc&list=PLRYFXjENY4WLWx54XCyWChI9ILag7s9hw&index=3" target= "_blank">Hướng dẫn 3: Cách luôn mở file python bằng Visual Studio Code (Always use this Visual Studio Code)</a>                           
+                        </li>
+                        <br>  
+
+                        <li>
+                            <a href = "https://www.youtube.com/watch?v=uHAtGefCAQs&list=PLRYFXjENY4WLWx54XCyWChI9ILag7s9hw&index=4" target= "_blank">Bài 1: Cách ghi chú trong ngôn ngữ Python (How to take notes in Python)
+                            </a>                           
+                        </li>
+                        <br>  
+
+                        <li>
+                            <a href = "https://www.youtube.com/watch?v=nUVEc_tLuh4&list=PLRYFXjENY4WLWx54XCyWChI9ILag7s9hw&index=5" target= "_blank">Bài 2: Các kiểu dữ liệu trong ngôn ngữ Python (Data Types in Python)
+                            </a>                            
+                        </li>
+                        <br> 
+
+                        <li>
+                            <a href = "https://www.youtube.com/watch?v=5kFzn0Ombho&list=PLRYFXjENY4WLWx54XCyWChI9ILag7s9hw&index=6" target= "_blank">Bài 3: Kiểu dữ liệu string, kiểu chuỗi (Text type in Python)
+                            </a>                            
+                        </li>
+                        <br> 
+
+                        <li>
+                            <a href = "https://www.youtube.com/watch?v=S_hRvsj5oaM&list=PLRYFXjENY4WLWx54XCyWChI9ILag7s9hw&index=7" target= "_blank">Bài 4: Kiểu số (Numeric Types in Pyhton)
+                            </a>                           
+                        </li>
+                        <br>  
+
+                        <li>
+                            <a href = "https://www.youtube.com/watch?v=k4LrmAiuWxc&list=PLRYFXjENY4WLWx54XCyWChI9ILag7s9hw&index=8" target= "_blank">Bài 5: Kiểu dữ liệu danh sách (list in Python)
+                            </a>                             
+                        </li>
+                        <br>
+
+                        <li>
+                            <a href = "https://www.youtube.com/watch?v=of0J8eo-mcY&list=PLRYFXjENY4WLWx54XCyWChI9ILag7s9hw&index=9" target= "_blank">Bài 6: List 2 chiều (list 2D in Python)
+                            </a>                          
+                        </li>
+                        <br>  
+
+                        <li>
+                            <a href = "https://www.youtube.com/watch?v=m1fB9TJovHQ&list=PLRYFXjENY4WLWx54XCyWChI9ILag7s9hw&index=10" target= "_blank">Bài 7: Câu lệnh có điều kiện if...else (Python Conditions and If statements)
+                            </a>                            
+                        </li>
+                        <br> 
+
+                        <li>
+                            <a href = "https://www.youtube.com/watch?v=Qeo2JNOEUeg&list=PLRYFXjENY4WLWx54XCyWChI9ILag7s9hw&index=11" target= "_blank">Bài 8: Toán tử logic trong if...else (logical operator keywords for if...else)
+                            </a>                            
+                        </li>
+                        <br> 
+
+                        <li>
+                            <a href = "https://www.youtube.com/watch?v=Rg_CEn8bJT8&list=PLRYFXjENY4WLWx54XCyWChI9ILag7s9hw&index=12" target= "_blank">Bài 9: Vòng lặp for...loop (Python For Loops)
+                            </a>                           
+                        </li>
+                        <br>  
+
+                        <li>
+                            <a href = "https://www.youtube.com/watch?v=pj5PyZ2Vn88&list=PLRYFXjENY4WLWx54XCyWChI9ILag7s9hw&index=13" target= "_blank">Bài 10: Vòng lặp while...loop (Python while loops)
+                            </a>                           
+                        </li>
+                        <br>  
+
+                        <li>
+                            <a href = "https://www.youtube.com/watch?v=Xgr_nYoAo5k&list=PLRYFXjENY4WLWx54XCyWChI9ILag7s9hw&index=14" target= "_blank">Bài 11: Hàm do người dùng tự định nghĩa (Python Functions)
+                            </a>                           
+                        </li>
+                        <br>  
+
+                        <li>
+                            <a href = "https://www.youtube.com/watch?v=xIdLySkGnq8&list=PLRYFXjENY4WLWx54XCyWChI9ILag7s9hw&index=15" target= "_blank">Bài 12: Đối số tùy biến * Arg trong hàm def (* Arguments in function)
+                            </a>                             
+                        </li>
+                        <br>    
                         
-                        <li><h5>Quản lý đường bộ, đường thủy:</h5><br>
+                        <li>
+                            <a href = "https://www.youtube.com/watch?v=26_9uIbcRQI&list=PLRYFXjENY4WLWx54XCyWChI9ILag7s9hw&index=16" target= "_blank">Bài 13: Cách gọi các file code Python & ứng dụng hàm main (if __name__=="__main__")
+                            </a>                           
+                        </li>  
+                        <br>  
 
+                        <li>
+                            <a href = "https://www.youtube.com/watch?v=j8qCylnVy-s&list=PLRYFXjENY4WLWx54XCyWChI9ILag7s9hw&index=17" target= "_blank">Bài 14: Gọi file code từ thư mục khác nhau (Import module from different director)
+                            </a>                           
+                        </li>  
+                        <br>  
+
+
+                        <!-- 2. Các Clips Python Excel -->
+                        <p>
+                            <ol>
+                                <!-- <li> -->
+                                    <strong> <a href="https://www.youtube.com/playlist?list=PLRYFXjENY4WLWx54XCyWChI9ILag7s9hw" target="_blank">II. PYTHON EXCEL</a> </strong>
+                                <!-- </li> -->
+                            </ol>                                                    
+                        </p>
+
+                        <li>
+                            <a href = "https://github.com/VuNghiXuan/giaotrinhPythonExcel/blob/main/TaiLieuTuHoc/book_Python_objExcel_20211021_DaBienTap.pdf" target= "_blank">Link tải tài liệu Python Excel                               
+                            </a>                           
                         </li>
-                        <li><h5>Các văn bản, web tham khảo:</h5><br>
-                            <!-- http://bkgvn.com.vn/component/content/section/29 -->
-                            <a href="http://bkgvn.com.vn/component/content/section/29">Quản lý khai thác bảo trì đường bộ</a><br>
-                            
+                        <br> 
+
+                        <li>
+                            <a href = "https://www.youtube.com/watch?v=6tsai_UDFT0&list=PLRYFXjENY4WLWx54XCyWChI9ILag7s9hw&index=1&t=11s" target= "_blank">Hướng dẫn 1: Cài đặt ngôn ngữ lập trình Python (Install Python)                                
+                            </a>                           
                         </li>
-                    </ol>
-                                                
-                </div>
-            </div>
-            <div id=con_right_mota> <h1>CÔNG TÁC BDTX KHU QUẢN LÝ THỰC HIỆN NĂM 2020</h1> <br>
-                <div id="img_container">
-                    <div class="img_item">
-                        <img class="img_photo" src="assets/btnn_dt762.jpg" alt="Not update">
-                        <div class="title_img">1. Thảm bê tông nhựa nóng ĐT.762</div>
-                        <!-- <div class="descrip_img">Lễ trao tặng chứng nhận</div>                         -->
-                    </div>
-                    <div class="img_item">
-                        <img class="img_photo" src="assets/catco_767.jpg" alt="Not update">
-                        <div class="title_img">2. Cắt cỏ lề ĐT.767</div>
-                        <!-- <div class="descrip_img">Địa chỉ 93, Quốc lộ 80 - Sadec - Đồng Tháp - Việt Nam </div>    -->
-                    </div>
-                    <div class="img_item">
-                        <img class="img_photo" src="assets/da_dt766.jpg" alt="Not update">
-                        <div class="title_img">3. Thi công nền đá ĐT.762</div>
-                        <!-- <div class="descrip_img">65 A, An Thạnh - An Nhơn - Châu Thành, Đồng Tháp</div>    -->
-                    </div>
-                    
-                    <div class="img_item">
-                        <img class="img_photo" src="assets/quetdg_765.jpg" alt="Not update">
-                        <div class="title_img">4. Quét đất mặt đường ĐT.765</div>
-                        <!-- <div class="descrip_img">Làng Chờ - Bắc Ninh</div>    -->
-                    </div>
-                    <div class="img_item">
-                        <img class="img_photo" src="assets/songtrau_765.jpg" alt="Not update">
-                        <div class="title_img">5. Xử lý gợn sóng trâu ĐT.765</div>
-                        <!-- <div class="descrip_img">Quán gánh - Hà Nội</div>    -->
-                    </div>
-                    <div class="img_item">
-                        <img class="img_photo" src="assets/thongcong_765.jpg" alt="Not update">
-                        <div class="title_img">6. Thông cống ĐT.765</div>
-                        <!-- <div class="descrip_img">Quán gánh - Hà Nội</div>    -->
-                    </div>
-                    <div class="img_item">
-                        <img class="img_photo" src="assets/vesinhcau_768.jpg" alt="Not update">
-                        <div class="title_img">7. Vệ sinh mặt cầu Rạch Tôm ĐT.768</div>
-                        <!-- <div class="descrip_img">Quán gánh - Hà Nội</div>    -->
-                    </div>
-                    <div class="img_item">
-                        <img class="img_photo" src="assets/vetmuong_762.jpg" alt="Not update">
-                        <div class="title_img">8. Vét mương ĐT.762</div>
-                        <!-- <div class="descrip_img">Quán gánh - Hà Nội</div>    -->
-                    </div>  
-                </div>
-            </div>
-        </div>
-        <hr>
-        <hr>
+                        <br> 
 
-        <!-- **********  KHO PHẦN MỀM ********** -->
-        <div id=con_kho>
-            <div id=con_left_kho>
-                
-                <div id="clip_excel">
-                    <ul><li><h3 id= "ungdung"><strong>KHO ỨNG DỤNG, TÀI LIỆU, LINK:</strong></h3></li></ul>
-                    <h5>Nền tảng và ngôn ngữ lập trình:</h5>
-                    
-                    
-                    <ol>
-                        <li>Nguồn VBA, Python lập trình cho Excel:<br/>
-                            <!-- <h5>Học VBA từ học excel online: </h5><br> -->
-                            
-
-                            <a href="https://hocexcel.online/course/studying">Lập trình VBA excel</a><br/>
-                            <a href="https://edumall.vn/my-courses">Nâng cao hiệu suất làm việc VBA</a><br/>                             
-                            <a href="https://pyan.vn/khoa-hoc-da-dang-ky">Python excel (pyan)</a><br/>   
-
-                            <br/>
+                        <li>
+                            <a href = "https://www.youtube.com/watch?v=uejdAEyT-IA&list=PLRYFXjENY4WLWx54XCyWChI9ILag7s9hw&index=2" target= "_blank">Hướng dẫn 2: Cài đặt và sử dụng Visual Studio Code (Install and use for Visual Studio Code)
+                            </a>                           
                         </li>
+                        <br>  
+
+                        <li>
+                            <a href = "https://www.youtube.com/watch?v=xiPpY3SHaQc&list=PLRYFXjENY4WLWx54XCyWChI9ILag7s9hw&index=3" target= "_blank">Hướng dẫn 3: Cách luôn mở file python bằng Visual Studio Code (Always use this Visual Studio Code)
+                            </a>                           
+                        </li>
+                        <br>  
+
+                        <li>
+                            <a href = "https://www.youtube.com/watch?v=XpxN_apwhFE&list=PLRYFXjENY4WIl0RLrAu8gvYM5yB9Fq2Vw&index=5" target= "_blank">Hướng dẫn 4: Cài đặt xlwings (Install xlwings)- Thư viện giao tiếp Excel
+                            </a>                            
+                        </li>
+                        <br> 
+
+                        <li>
+                            <a href = "https://www.youtube.com/watch?v=bRKtyz7k8t4&list=PLRYFXjENY4WIl0RLrAu8gvYM5yB9Fq2Vw&index=6" target= "_blank">Bài 1: Đối tượng Bảng tính Excel hay WorkBook (Object WorkBook)
+                            </a>                            
+                        </li>
+                        <br> 
+
+                        <li>
+                            <a href = "https://www.youtube.com/watch?v=Xm1i0kV-qSo&list=PLRYFXjENY4WIl0RLrAu8gvYM5yB9Fq2Vw&index=7" target= "_blank">Bài 2: Cách mở, đóng WorkBook Excel lưu sẵn trên máy tính bằng code Python
+                            </a>                           
+                        </li>
+                        <br> 
+
+                        <li>
+                            <a href = "https://www.youtube.com/watch?v=4SX0E-otuOY&list=PLRYFXjENY4WIl0RLrAu8gvYM5yB9Fq2Vw&index=8" target= "_blank">Bài 3: Đối tượng WorkSheet (Object WorkSheet)
+                            </a>                        
+                        </li>
+                        <br> 
+
+                        <li>
+                            <a href = "https://www.youtube.com/watch?v=f3hs6Z9SFLg&list=PLRYFXjENY4WIl0RLrAu8gvYM5yB9Fq2Vw&index=9" target= "_blank">Bài 4: Đối tượng Range trong bảng tính Excel (Object Range)
+                            </a>                             
+                        </li>
+                        <br>
+
+                        <li>
+                            <a href = "https://www.youtube.com/watch?v=p-HweRJ1d-E&list=PLRYFXjENY4WIl0RLrAu8gvYM5yB9Fq2Vw&index=10" target= "_blank">Bài 5: List trong Python Excel (list 1D)
+                            </a>                       
+                        </li>
+                        <br>
+
+                        <li>
+                            <a href = "https://www.youtube.com/watch?v=vuxLQpdvJuo&list=PLRYFXjENY4WIl0RLrAu8gvYM5yB9Fq2Vw&index=10" target= "_blank">Bài 6: Ghi dữ liệu vào bảng tính Excel (list 1D, list 2D)
+                            </a>                       
+                        </li>
+                        <br>
+
+                        <li>
+                            <a href = "https://www.youtube.com/watch?v=7YhfckkVdGs&list=PLRYFXjENY4WIl0RLrAu8gvYM5yB9Fq2Vw&index=12" target= "_blank">Bài 7: Lấy dữ liệu từ bảng tính Excel đưa vào list Python 
+                            </a>                       
+                        </li>
+                        <br>
+
+                        <li>
+                            <a href = "https://www.youtube.com/watch?v=c3xmwiILHUE&list=PLRYFXjENY4WIl0RLrAu8gvYM5yB9Fq2Vw&index=13" target= "_blank">Bài 8: Viết chương trình sắp xếp lại cấu trúc dữ liệu Bảng tính Excel 
+                            </a>                       
+                        </li>
+                        <br>
+
+                        <li>
+                            <a href = "https://www.youtube.com/watch?v=vHinlqEDgx4&list=PLRYFXjENY4WIl0RLrAu8gvYM5yB9Fq2Vw&index=14" target= "_blank">Bài 9: Hoàn thành viết chương trình sắp xếp cấu trúc dữ liệu trong Bảng tính Excel 
+                            </a>                       
+                        </li>
+                        <br>
+
+                        <li>
+                            <a href = "https://www.youtube.com/watch?v=yGPBL7G0C8M&list=PLRYFXjENY4WIl0RLrAu8gvYM5yB9Fq2Vw&index=15" target= "_blank">Bài 10: Vòng lặp While...Loops (Ứng dụng Usedname, Password) 
+                            </a>                       
+                        </li>
+                        <br>
+
+                        <li>
+                            <a href = "https://www.youtube.com/watch?v=oI3K7TQeAsM&list=PLRYFXjENY4WIl0RLrAu8gvYM5yB9Fq2Vw&index=16" target= "_blank">Bài 11: Dùng While...Loops tối ưu tốc độ code trong chương trình thay đổi cấu trúc dữ liệu bài trước
+                            </a>                       
+                        </li>
+                        <br>
+
+                        <li>
+                            <a href = "https://www.youtube.com/watch?v=oI3K7TQeAsM&list=PLRYFXjENY4WIl0RLrAu8gvYM5yB9Fq2Vw&index=16" target= "_blank">Bài 12: Dùng While...Loops tối ưu tốc độ code trong chương trình thay đổi cấu trúc dữ liệu bài trước
+                            </a>                       
+                        </li>
+                        <br>
+
+                        <li>
+                            <a href = "https://www.youtube.com/watch?v=OeOn5bzgYLQ&list=PLRYFXjENY4WIl0RLrAu8gvYM5yB9Fq2Vw&index=17" target= "_blank">Bài 13: Tìm dòng cuối dữ liệu trong Excel (Find last row using down method)
+                            </a>                       
+                        </li>
+                        <br>
+
+                        <li>
+                            <a href = "https://www.youtube.com/watch?v=NIJKZ-H5MmM&list=PLRYFXjENY4WIl0RLrAu8gvYM5yB9Fq2Vw&index=18" target= "_blank">Bài 14: Tìm dòng cuối bảng tính Excel đi từ dưới lên (last row by up methol)
+                            </a>                       
+                        </li>
+                        <br>
+
+                        <li>
+                            <a href = "https://www.youtube.com/watch?v=Xgr_nYoAo5k&list=PLRYFXjENY4WIl0RLrAu8gvYM5yB9Fq2Vw&index=19" target= "_blank">Bài 15: Hàm do người dùng tự định nghĩa (Python Functions)
+                            </a>                       
+                        </li>
+                        <br>
+
+                        <li>
+                            <a href = "https://www.youtube.com/watch?v=xIdLySkGnq8&list=PLRYFXjENY4WIl0RLrAu8gvYM5yB9Fq2Vw&index=19" target= "_blank">Bài 16: Đối số tùy biến *Arg trong hàm def (*Arguments in function)
+                            </a>                       
+                        </li>
+                        <br>
+
+                        <li>
+                            <a href = "https://www.youtube.com/watch?v=4O5mzTe5-Wc&list=PLRYFXjENY4WIl0RLrAu8gvYM5yB9Fq2Vw&index=22" target= "_blank">Bài 17: Xây dựng hàm tìm dòng cuối dữ liệu (Build a function to find the last row)
+                            </a>                       
+                        </li>
+                        <br>
+
+                        <li>
+                            <a href = "https://www.youtube.com/watch?v=FfvHw1ZSKrk&list=PLRYFXjENY4WIl0RLrAu8gvYM5yB9Fq2Vw&index=22" target= "_blank">Bài 18: Xây dựng hàm tìm cột cuối chứa dữ liệu (func LastCol by methol "left")
+                            </a>                       
+                        </li>
+                        <br>
+
+                        <li>
+                            <a href = "https://www.youtube.com/watch?v=4Ttd-mR6xsw&list=PLRYFXjENY4WIl0RLrAu8gvYM5yB9Fq2Vw&index=23" target= "_blank">Bài 19: Xây dựng hàm tìm vùng có chứa dữ liệu (Find range have data)
+                            </a>                       
+                        </li>
+                        <br>
+
+                        <li>
+                            <a href = "https://www.youtube.com/watch?v=1rAF6Tsr3E4&list=PLRYFXjENY4WIl0RLrAu8gvYM5yB9Fq2Vw&index=24" target= "_blank">Bài 20: Sửa code tìm tên cột cuối vùng chứa dữ liệu (Fix code find last row)
+                            </a>                       
+                        </li>
+                        <br>
+
+                        <li>
+                            <a href = "https://www.youtube.com/watch?v=ESDXzxj1Zgg&list=PLRYFXjENY4WIl0RLrAu8gvYM5yB9Fq2Vw&index=25" target= "_blank">Bài 21: Thuật toán tìm tên cột cho bảng tính Excel (Algorithm to find column names)
+                            </a>                       
+                        </li>
+                        <br>
+
                         
-                        <li> Python cơ bản, nâng cao:<br/>
-                            <!-- <h5>Python cơ bản  Nâng cao: </h5><br> -->
-                            <a href="https://www.facebook.com/groups/dunglailaptrinh.python">Python cơ bản --> Nâng cao</a><br/>                            
+                        
+                    </div>
+                    <div id="con_right_content">                       
 
-                            <br/>
-                        </li>
-                        <li> Lập trình web:<br/>
-                            <!-- <h5>Lập trình web (HTML, CSS, JAVASCRIPT, PHP)</h5><br> -->
-                            <a href="https://www.facebook.com/groups/dunglailaptrinh.web">Lập trình web HTML, CSS, JAVASCRIPT, PHP</a><br/>                            
-                            <br/>
-                        </li>
-                        <li> Nguồn Data Science:<br/>
-                            <!-- <h5>Data Science </h5><br> -->
-                            <a href="https://www.facebook.com/groups/dunglailaptrinh.datascience">Data Science</a><br/>                            
-                            <a href="https://www.youtube.com/watch?v=HPGYTWYM13s">Pandas và DataFrame (codeXploer)</a><br/> 
-                            <a href="https://www.youtube.com/watch?v=1eSmR2EJjYM">Thư viện Numpy (codeXploer)</a><br/> 
-                            <a href="https://www.youtube.com/watch?v=Ak7GamuoIr4">Trực Quan Hoá Dữ Liệu Matplotlib (codeXploer)</a><br/> 
-                            <a href="https://www.youtube.com/watch?v=4_YB4ZWLgPg">Trực Quan Hoá Dữ Liệu với Seaborn (codeXploer)</a><br/> 
-                            
-                            
-                            <br/>
-                        </li>
-                        <li> AI, Machine learning, Deep learning:<br/>
-                            <!-- <h5>AI - Trí Tuệ Nhân Tạo Cơ Bản </h5><br> -->
-                            <a href="https://www.facebook.com/groups/dunglailaptrinh.aibasic">AI - Trí Tuệ Nhân Tạo Cơ Bản</a><br/>                            
-                            <a href="https://www.youtube.com/watch?v=g5BdrxPhQU0">Setup Môi Trường Lập Trình Trí Tuệ Nhân Tạo | Cài Đặt Anaconda và Python (codeXploer)</a><br/> 
-                            <a href="https://www.youtube.com/watch?v=VsXKtjddXWY&t=756s">Tiền Xử Lý Dữ Liệu bằng Scikit-Learn (codeXploer)</a><br/> 
-                            
-                            <br/>
-                        </li>
-
-
-                    </ol>
-                                                
-                </div>
-            </div>
-            <div id=con_right_kho> <h1>CLIP-VIDEO</h1> <br>
-                <div id="clip_container">
-                    
-                    <div class="clip_item">
-                        <!-- <source src="mp4/autofile_excel.mp4" type="video/mp4">
-                        <source src="mp4/vba_excel.mp4" type="video/mp4"> height="300" -->
-                        <video class= "clip_photo" width="600" height="300" controls>
-                            <source src="mp4/autofile_excel.mp4" type="video/mp4">
-                            <!-- <source src="assets/pyan.ogg" type="video/ogg"> -->
-                            Your browser does not support the video tag.
-                                                
-                        </video>
-                        <div class="title_clip">1. Tự động nhập dữ liệu, tính toán và xuất tên file theo yêu cầu, chỉ với 3'30s cho 140 cái dự toán (VBA)</div>
+                        <div id=con_right_kho> <h2>KHO ỨNG DỤNG</h2> <br>
+                            <div id="clip_container">
+                                
+                                <div class="clip_item">
+                                    <!-- <source src="mp4/autofile_excel.mp4" type="video/mp4">
+                                    <source src="mp4/vba_excel.mp4" type="video/mp4"> height="300" -->
+                                    <video class= "clip_photo" width="600" height="300" controls>
+                                        <source src="mp4/autofile_excel.mp4" type="video/mp4">
+                                        <!-- <source src="assets/pyan.ogg" type="video/ogg"> -->
+                                        Your browser does not support the video tag.
+                                                            
+                                    </video>
+                                    <div class="title_clip">1. Tự động nhập dữ liệu, tính toán và xuất tên file theo yêu cầu, chỉ với 3'30s cho 140 cái dự toán (VBA)</div>
+                                </div>
+            
+                                <div class="clip_item">
+                                    <video class= "clip_photo" width="600" height="300" controls>
+                                        <source src="mp4/vba_excel.mp4" type="video/mp4">
+                                        <!-- <source src="assets/pyan.ogg" type="video/ogg"> -->
+                                        Your browser does not support the video tag.
+                                                            
+                                    </video>
+                                    <div class="title_clip">2. Form tìm kiếm dữ liệu (VBA)</div>
+                                </div>
+            
+                            </div>
+                            <div class="clip_item">
+                                <video class= "clip_photo" width="600" height="300" controls>
+                                    <source src="mp4/vba_sql.mp4" type="video/mp4">
+                                    <!-- <source src="assets/pyan.ogg" type="video/ogg"> -->
+                                    <!-- Your browser does not support the video tag. -->
+                                                        
+                                </video>
+                                <div class="title_clip">3. Form tìm kiếm dữ liệu (VBA, SQL)</div>                        
+            
+                            </div>  
+            
+                            <div class="clip_item">
+                                <video class= "clip_photo" width="600" height="300" controls>
+                                    <source src="mp4/pyan.mp4" type="video/mp4">
+                                    <!-- <source src="assets/pyan.ogg" type="video/ogg"> -->
+                                    <!-- Your browser does not support the video tag. -->
+                                                        
+                                </video>
+                                <div class="title_clip">4. Form tìm kiếm dữ liệu (Python, Pandas, Tkinter)</div>                        
+            
+                            </div>
+                            <div class="clip_item">
+                                <video class= "clip_photo" width="600" height="300" controls>
+                                    <source src="mp4/gradient_descent_bac1.mp4" type="video/mp4">
+                                    <!-- <source src="assets/pyan.ogg" type="video/ogg"> -->
+                                    <!-- Your browser does not support the video tag. -->
+                                                        
+                                </video>
+                                <div class="title_clip">5. Thuật toán Gradient Descent - Phương trình bậc 1: y= ax+b</div>                        
+            
+                            </div> 
+                            <div class="clip_item">
+                                <video class= "clip_photo" width="600" height="300" controls>
+                                    <source src="mp4/gradient_descent_bac2.mp4" type="video/mp4">
+                                    <!-- <source src="assets/pyan.ogg" type="video/ogg"> -->
+                                    <!-- Your browser does not support the video tag. -->
+                                                        
+                                </video>
+                                <div class="title_clip">6. Thuật toán Gradient Descent - Phương trình bậc 2: y= ax^2 + bx + c</div>                        
+            
+                            </div> 
+                            <div class="clip_item">
+                                <video class= "clip_photo" width="600" height="300" controls>
+                                    <source src="mp4/algorithm_kmeans.mp4" type="video/mp4">
+                                    <!-- <source src="assets/pyan.ogg" type="video/ogg"> -->
+                                    <!-- Your browser does not support the video tag. -->
+                                                        
+                                </video>
+                                <div class="title_clip">7. Thuật toán Kmean, tìm label(chung nhóm Cluseters) </div>                        
+            
+                            </div> 
+                            <div class="clip_item">
+                                <video class= "clip_photo" width="600" height="300" controls>
+                                    <source src="mp4/data_Science.mp4" type="video/mp4">
+                                    <!-- <source src="assets/pyan.ogg" type="video/ogg"> -->
+                                    <!-- Your browser does not support the video tag. -->
+                                                        
+                                </video>
+                                <div class="title_clip">8. Data Science (phân tích điểm thi đại học năm 2020 và thu thập dữ liệu mã chứng khoán, báo cáo Quý, thường niên)</div>                        
+            
+                            </div> 
+            
+                        </div>
                     </div>
 
-                    <div class="clip_item">
-                        <video class= "clip_photo" width="600" height="300" controls>
-                            <source src="mp4/vba_excel.mp4" type="video/mp4">
-                            <!-- <source src="assets/pyan.ogg" type="video/ogg"> -->
-                            Your browser does not support the video tag.
-                                                
-                        </video>
-                        <div class="title_clip">2. Form tìm kiếm dữ liệu (VBA)</div>
-                    </div>
-
                 </div>
-                <div class="clip_item">
-                    <video class= "clip_photo" width="600" height="300" controls>
-                        <source src="mp4/vba_sql.mp4" type="video/mp4">
-                        <!-- <source src="assets/pyan.ogg" type="video/ogg"> -->
-                        <!-- Your browser does not support the video tag. -->
-                                            
-                    </video>
-                    <div class="title_clip">3. Form tìm kiếm dữ liệu (VBA, SQL)</div>                        
-
-                </div>  
-
-                <div class="clip_item">
-                    <video class= "clip_photo" width="600" height="300" controls>
-                        <source src="mp4/pyan.mp4" type="video/mp4">
-                        <!-- <source src="assets/pyan.ogg" type="video/ogg"> -->
-                        <!-- Your browser does not support the video tag. -->
-                                            
-                    </video>
-                    <div class="title_clip">4. Form tìm kiếm dữ liệu (Python, Pandas, Tkinter)</div>                        
-
-                </div>
-                <div class="clip_item">
-                    <video class= "clip_photo" width="600" height="300" controls>
-                        <source src="mp4/gradient_descent_bac1.mp4" type="video/mp4">
-                        <!-- <source src="assets/pyan.ogg" type="video/ogg"> -->
-                        <!-- Your browser does not support the video tag. -->
-                                            
-                    </video>
-                    <div class="title_clip">5. Thuật toán Gradient Descent - Phương trình bậc 1: y= ax+b</div>                        
-
-                </div> 
-                <div class="clip_item">
-                    <video class= "clip_photo" width="600" height="300" controls>
-                        <source src="mp4/gradient_descent_bac2.mp4" type="video/mp4">
-                        <!-- <source src="assets/pyan.ogg" type="video/ogg"> -->
-                        <!-- Your browser does not support the video tag. -->
-                                            
-                    </video>
-                    <div class="title_clip">6. Thuật toán Gradient Descent - Phương trình bậc 2: y= ax^2 + bx + c</div>                        
-
-                </div> 
-                <div class="clip_item">
-                    <video class= "clip_photo" width="600" height="300" controls>
-                        <source src="mp4/algorithm_kmeans.mp4" type="video/mp4">
-                        <!-- <source src="assets/pyan.ogg" type="video/ogg"> -->
-                        <!-- Your browser does not support the video tag. -->
-                                            
-                    </video>
-                    <div class="title_clip">7. Thuật toán Kmean, tìm label(chung nhóm Cluseters) </div>                        
-
-                </div> 
-                <div class="clip_item">
-                    <video class= "clip_photo" width="600" height="300" controls>
-                        <source src="mp4/data_Science.mp4" type="video/mp4">
-                        <!-- <source src="assets/pyan.ogg" type="video/ogg"> -->
-                        <!-- Your browser does not support the video tag. -->
-                                            
-                    </video>
-                    <div class="title_clip">8. Data Science (phân tích điểm thi đại học năm 2020 và thu thập dữ liệu mã chứng khoán, báo cáo Quý, thường niên)</div>                        
-
-                </div> 
-
-            </div>
-        </div>
+            </div> 
+        </div>    
+        
+        <!-- Đóng thẻ content -->
         <hr>
         
+
+        <!-- Liên hệ -->
         <h4 id="lienhe">Chi tiết liên hệ: </h4>        
         <div>           
-            Zalo: 0979-820-802<br/>
+            <!-- Zalo: 0979-820-802<br/> -->
             Email:<a href="mailto:dangdiepquan@gmail.com">dangdiepquan@gmail.com</a><br/>
             Email:<a href="vunghixuan.info@gmail.com">vunghixuan.info@gmail.com</a><br/>
             Facebook:<a href="https://www.facebook.com/vunghixuan">https://www.facebook.com/vunghixuan</a><br/>            
@@ -368,15 +593,15 @@
         <br>
         <nav>            
             <a href="#con_head" class="link_conhead">Quay lại</a>
-            <a href="#lylich" class="link_lylich">Thông tin cá nhân</a> 
-            <a href="#gioithieu_bdtx" class="link_gioithieu_bdtx">Công tác bảo trì</a> 
-            <a href="#ungdung" class="link_ungdung">Ứng dụng </a>
+            <a href="#gioithieu" class="link_gioithieu">Thông tin khóa học</a> 
+            <!-- <a href="#gioithieu_bdtx" class="link_gioithieu_bdtx">Công tác bảo trì</a>  -->
+            <!-- <a href="#ungdung" class="link_ungdung">Ứng dụng </a> -->
             <!-- <a href="#lienhe" class="link_lienhe">Liên hệ </a> -->
         </nav>
         
         <hr>
         <footer>
-            <em>Create by VuNghiXuan 0979.820.802 - <a href="mailto:dangdiepquan@gmail.com">dangdiepquan@gmail.com</a></em> 
+            <em>Create by VuNghiXuan - <a href="mailto:dangdiepquan@gmail.com">dangdiepquan@gmail.com</a></em> 
         </footer>
     </body>
 
